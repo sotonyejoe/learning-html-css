@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBox">
+            <div class="label">List one</div>
+            <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Eveniet facilis architecto   vel et nam dolorem! Accusantium,  iusto exercitationem? Facere 
+                 illo voluptatem dolor cupiditate nobis! Delectus 
+                voluptate magnam ducimus quidem officiis.
+            </div>
+        </div>
+        <div class="contentBox ">
+            <div class="label">List two</div>
+            <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Eveniet facilis architecto   vel et nam dolorem! Accusantium,  iusto exercitationem? Facere 
+                 illo voluptatem dolor cupiditate nobis! Delectus 
+                voluptate magnam ducimus quidem officiis.
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="label">List three</div>
+            <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Eveniet facilis architecto   vel et nam dolorem! Accusantium,  iusto exercitationem? Facere 
+                 illo voluptatem dolor cupiditate nobis! Delectus 
+                voluptate magnam ducimus quidem officiis.
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="label">List four</div>
+            <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Eveniet facilis architecto   vel et nam dolorem! Accusantium,  iusto exercitationem? Facere 
+                 illo voluptatem dolor cupiditate nobis! Delectus 
+                voluptate magnam ducimus quidem officiis.
+            </div>
+        </div>
+    </div>
+    <script>
+        const contentBx = document.getElementsByClassName('contentBox');
+
+        for(i = 0; i < contentBx.length; i++){
+         contentBx[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+    })
+}
+    </script>
+</body>
+</html>
